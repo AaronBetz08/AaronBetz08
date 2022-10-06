@@ -6,8 +6,24 @@ div {
 }
 p {
     color: white;
+    font-size:large
 }
 h1 {
     color: white;
+    text-align:center;
+    font-size: xx-large;
 }
-
+main {
+    text-align: center;
+}
+colgroup {
+    float:right
+}
+hr {
+    color:white;
+    font-size:large
+}
+nav {
+    font-size: large;
+    
+}
