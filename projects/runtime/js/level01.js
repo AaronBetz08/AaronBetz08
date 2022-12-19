@@ -28,8 +28,34 @@ var level01 = function (window) {
         // TODO 6 and on go here
         // BEGIN EDITING YOUR CODE HERE
 
+        function createSawBlade(x,y){
+            var hitZoneSize = 25;
+var damageFromObstacle = 10;
+var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
+sawBladeHitZone.x = x;
+sawBladeHitZone.y = y;
+game.addGameItem(sawBladeHitZone);
+var obstacleImage = draw.bitmap("img/sawblade.png");
+sawBladeHitZone.addChild(obstacleImage);
+obstacleImage.x = -27
+obstacleImage.y = -25
+        }
+        createSawBlade(1400, 200)
+        createSawBlade(1200, 300)
+        createSawBlade(1500, 400)
         
-        
+        function obstacle (x, y){
+            var damageFromObstacle = 10;
+var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
+sawBladeHitZone.x = x;
+sawBladeHitZone.y = y;
+game.addGameItem(sawBladeHitZone);
+var obstacleImage = draw.bitmap("img/sawblade.png");
+sawBladeHitZone.addChild(obstacleImage);
+obstacleImage.x = -27
+obstacleImage.y = -25
+        }
+        obstacle(1400, 350)
         
         // DO NOT EDIT CODE BELOW HERE
     }
